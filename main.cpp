@@ -212,6 +212,8 @@ int gesture_main(void)
         should_clear_buffer = gesture_index < label_num;
         if (gesture_index < label_num) {
             error_reporter->Report(config.output_message[gesture_index]);
+            ShowSavedData();
+            mode = SET_MODE;
         }
         
     
